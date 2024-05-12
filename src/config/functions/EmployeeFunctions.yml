@@ -1,0 +1,30 @@
+getEmployees:
+  handler: src/handlers/employee/getEmployees.handler
+  events:
+    - http:
+        path: /employee
+        method: GET
+getEmployee:
+  handler: src/handlers/employee/getEmployee.handler
+  events:
+    - http:
+        path: /employee/{id}
+        method: GET
+createEmployee:
+  handler: src/handlers/employee/createEmployee.handler
+  events:
+    - http:
+        path: /employee
+        method: POST
+updateEmployee:
+  handler: src/handlers/employee/updateEmployee.handler
+  events:
+    - http:
+        path: /employee/{id}
+        method: PATCH
+deleteEmployee:
+  handler: src/handlers/employee/deleteEmployee.handler
+  events:
+    - http:
+        path: /employee/{id}
+        method: DELETE

@@ -1,0 +1,6 @@
+getProducts:
+  handler: src/handlers/products/getProducts.handler
+  events:
+    - http:
+        path: /product
+        method: GET

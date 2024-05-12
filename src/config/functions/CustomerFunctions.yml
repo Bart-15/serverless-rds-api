@@ -1,0 +1,6 @@
+getCustomers:
+  handler: src/handlers/customer/getCustomers.handler
+  events:
+    - http:
+        path: /customer
+        method: GET

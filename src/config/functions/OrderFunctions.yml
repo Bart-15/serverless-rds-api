@@ -1,0 +1,6 @@
+getOrders:
+  handler: src/handlers/order/getOrders.handler
+  events:
+    - http:
+        path: /order
+        method: GET
