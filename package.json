@@ -2,19 +2,18 @@
   "name": "serverless-rds",
   "version": "1.0.0",
   "description": "Serverless RDS",
-  "main": "handler.js",
   "scripts": {
     "start": "npm run build && node build/handler.js",
     "local": "npm run build:live",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dashboard": "serverless",
-    "offline": "serverless offline --stage dev --noPrependStageInUrl",
+    "offline": "serverless offline",
     "deploy": "serverless deploy",
     "build": "tsc -p .",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
-  "author": "",
+  "author": "Bart Tabusao",
   "license": "ISC",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.125",

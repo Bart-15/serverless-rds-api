@@ -9,3 +9,4 @@ build
 .build
 .vscode/
 .DS_Store
+serverless.yml
