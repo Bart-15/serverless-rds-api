@@ -4,3 +4,15 @@ getCustomers:
     - http:
         path: /customer
         method: GET
+getCustomerOrders:
+  handler: src/handlers/customer/customerOrders.handler
+  events:
+    - http:
+        path: /customerOrders/{id}
+        method: GET
+getCustomerDetails:
+  handler: src/handlers/customer/getCustomerDetails.handler
+  events:
+    - http:
+        path: /customer/{id}
+        method: GET
