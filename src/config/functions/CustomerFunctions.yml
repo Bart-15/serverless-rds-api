@@ -16,3 +16,9 @@ getCustomerDetails:
     - http:
         path: /customer/{id}
         method: GET
+getDistinctCountry:
+  handler: src/handlers/customer/getDistinctCountry.handler
+  events:
+    - http:
+        path: /customer/country
+        method: GET

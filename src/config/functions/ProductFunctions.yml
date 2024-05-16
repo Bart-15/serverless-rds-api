@@ -4,3 +4,27 @@ getProducts:
     - http:
         path: /product
         method: GET
+getProduct:
+  handler: src/handlers/products/getProduct.handler
+  events:
+    - http:
+        path: /product/{id}
+        method: GET
+createProduct:
+  handler: src/handlers/products/createProduct.handler
+  events:
+    - http:
+        path: /product
+        method: POST
+updateProduct:
+  handler: src/handlers/products/updateProduct.handler
+  events:
+    - http:
+        path: /product/{id}
+        method: PATCH
+deleteProduct:
+  handler: src/handlers/products/deleteProduct.handler
+  events:
+    - http:
+        path: /product/{id}
+        method: DELETE

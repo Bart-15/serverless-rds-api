@@ -15,10 +15,10 @@ const getProducts = async (event: Event) => {
     if (!params) {
       const query = `SELECT * FROM products`;
 
-      const orders = await simpleQuery(query);
+      const products = await simpleQuery(query);
       return successResponse({
         body: {
-          orders: orders,
+          products: products,
           totalCount,
         },
       });
@@ -37,7 +37,7 @@ const getProducts = async (event: Event) => {
 
     return successResponse({
       body: {
-        orders: paginatedData,
+        products: paginatedData,
         totalCount,
         itemsPerPage,
         totalPages,
